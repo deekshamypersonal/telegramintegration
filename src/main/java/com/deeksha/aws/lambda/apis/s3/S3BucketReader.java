@@ -11,8 +11,8 @@ import java.util.Scanner;
 public class S3BucketReader {
 
    // Values set from environment variables
-    static String bucketName;
-    static String key; 
+    static String bucketName=System.getenv("BUCKET_NAME");
+    static String key=System.getenv("TOKEN_KEY");; 
 
 
     public static String getToken() {
