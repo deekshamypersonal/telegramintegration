@@ -51,12 +51,12 @@ public class SetGoogleEvent {
         // Set the start and end times for the event
         EventDateTime start = new EventDateTime()
                 .setDateTime(new DateTime(model.getDateTime()))
-                .setTimeZone("America/Los_Angeles"); // Replace with your desired time zone
+                .setTimeZone("America/Los_Angeles");
         event.setStart(start);
 
         EventDateTime end = new EventDateTime()
                 .setDateTime(endDateTime)
-                .setTimeZone("America/Los_Angeles"); // Replace with your desired time zone
+                .setTimeZone("America/Los_Angeles"); 
         event.setEnd(end);
 
         String calendarId = "primary";
