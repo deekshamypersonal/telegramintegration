@@ -12,13 +12,13 @@ public class S3BucketReader {
 
    // Values set from environment variables
     static String bucketName;
-    static String key;  // e.g., "folder/filename.txt"
+    static String key; 
 
 
     public static String getToken() {
 
         S3Client s3 = S3Client.builder()
-                .region(Region.of("us-east-1")) // e.g., Region.US_EAST_1
+                .region(Region.of("us-east-1")) 
                 .build();
 
         GetObjectRequest getObjectRequest = GetObjectRequest.builder()
